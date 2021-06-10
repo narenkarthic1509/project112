@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Project 110 </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="styling.css">
+    </head>
+    <body class="bg-info">
+    <center>
+        <div class="col-xs-12 header_div">
+        <h2 id="case_study">case study</h2>
+        </div>
+
+        <br><br><br>
+
+
+        <div class="col-xs-12 main_div">
+        <h4> subject 1 - </h4>
+        <img src="IMG_20210609_181937.jpg" style="height: 300px; width: 330px;">    
+        <h3>result from microsoft azure - <span id="azure_result1">pillow</span></h3>
+        <h3>result from mobilenet - <span id="mobilenet_result1">wallet</span></h3>
+        <div>    
+        <label>result - </label>
+        <h4 id="whos_better1">both of them didn't tell correctly</h4>
+        </div>        
+        <button class="btn btn-success">identify</button>
+        <br><br><br>
+        </div>
+        
+
+        <div class="col-xs-12 main_div">
+        <h4> subject 2 - </h4>
+        <img src="IMG_20210609_182038.jpg" style="height: 300px; width: 330px;">    
+        <h3>result from microsoft azure - <span id="azure_result2">person</span></h3>
+        <h3>result from mobilenet - <span id="mobilenet_result2">maraca</span></h3>
+        <div>    
+        <label>result - </label>
+        <h4 id="whos_better2">both of them didn't tell correctly</h4>
+        </div>        
+        <button class="btn btn-success">identify</button>
+        <br><br><br>
+        </div>
+
+        <div class="col-xs-12 main_div">
+        <h4> subject 3 - </h4>
+        <img src="IMG_20210609_182128.jpg" style="height: 300px; width: 330px;">    
+        <h3>result from microsoft azure - <span id="azure_result3">Mechanical fan</span></h3>
+        <h3>result from mobilenet - <span id="mobilenet_result3">electric fan</span></h3>
+        <div>    
+        <label>result - </label>
+        <h4 id="whos_better3">mobilenet's result is correct it is an electric fan</h4>
+        </div>        
+        <button class="btn btn-success">identify</button>
+        </div>
+
+        <div class="col-xs-12 main_div">
+        <h4> subject 4 - </h4>
+            <img src="IMG_20210609_182226.jpg" style="height: 300px; width: 330px;">    
+                <h3>result from microsoft azure - <span id="azure_result4">indoor</span></h3>
+                <h3>result from mobilenet - <span id="mobilenet_result4">sleeping bag</span></h3>
+                <div>    
+                <label>result - </label>
+                <h4 id="whos_better4">both of them didn't tell correctly</h4>
+                </div>        
+                <button class="btn btn-success">identify</button>
+                </div>
+            
+                <div class="col-xs-12 main_div">
+                    <h4> subject 5 - </h4>
+                    <img src="IMG_20210609_182405.jpg" style="height: 300px; width: 330px;">    
+                    <h3>result from microsoft azure - <span id="azure_result5">seating</span></h3>
+                    <h3>result from mobilenet - <span id="mobilenet_result5">modem</span></h3>
+                    <div>    
+                    <label>result - </label>
+                    <h4 id="whos_better5">microsoft's azure is correct but it was actually supposed to see it as a ruler</h4>
+                    </div>        
+                    <button class="btn btn-success">identify</button>
+                    </div>
+                    
+                    <div class="col-xs-12 main_div">
+                        <h4> subject 6 - </h4>
+                        <img src="IMG_20210609_182320.jpg" style="height: 300px; width: 330px;">    
+                        <h3>result from microsoft azure - <span id="azure_result6">indoor</span></h3>
+                        <h3>result from mobilenet - <span id="mobilenet_result6">mouse</span></h3>
+                        <div>    
+                        <label>result - </label>
+                        <h4 id="whos_better6">mobilenet is correct it is a mouse</h4>
+                        </div>        
+                        <button class="btn btn-success">identify</button>
+                        </div>
+                    
+                        <div class="col-xs-12 main_div">
+                            <h4> subject 7 - </h4>
+                            <img src="IMG_20210609_182423.jpg" style="height: 300px; width: 330px;">    
+                            <h3>result from microsoft azure - <span id="azure_result7">eyeglasses</span></h3>
+                            <h3>result from mobilenet - <span id="mobilenet_result7">sunglass</span></h3>
+                            <div>    
+                            <label>result - </label>
+                            <h4 id="whos_better7">both of them are correct but it is a 3d glass</h4>
+                            </div>        
+                            <button class="btn btn-success">identify</button>
+                            </div>
+                            
+                            <div class="col-xs-12 main_div">
+                                <h4> subject 8 - </h4>
+                                <img src="IMG_20210609_182455.jpg" style="height: 300px; width: 330px;">    
+                                <h3>result from microsoft azure - <span id="azure_result8">Remote control</span></h3>
+                                <h3>result from mobilenet - <span id="mobilenet_result8">wallet</span></h3>
+                                <div>    
+                                <label>result - </label>
+                                <h4 id="whos_better8">microsoft's azure is correct it is a remote</h4>
+                                </div>        
+                                <button class="btn btn-success">identify</button>
+                                </div>    
+
+
+                 <h3>conclusion</h3>
+                 <br><br>
+                 <h4>totally 8 images were present</h4>
+                 <br>
+                 <h4>but 3 images were wrong on both sides</h4>
+                 <br>
+                 <h4>2 images were on mobile net's side</h4>
+                 <br>
+                 <h4>and 2 images were on azure's side too</h4>
+                 <br>
+                 <h4>but both of them was correct at one image</h4>
+
+        
+
+        
+
+    </center>
+    </body>
+    <script src="main.js"></script>
+</html>
